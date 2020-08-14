@@ -9,7 +9,6 @@ print("how many time ? (number of connexion)")
 nb_conexion = int(input())
 i = 0
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 while (i < nb_conexion):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((TCP_IP, TCP_PORT))
