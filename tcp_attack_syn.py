@@ -10,7 +10,6 @@ print (" _______ _____ _____     _______     ___   _          _______ _______   
 import socket
 
 IP = raw_input("IP : ")
-print (IP)
 PORT = int(input("port : "))
 nb_conexion = int(input("number of connexion : "))
 i = 0
