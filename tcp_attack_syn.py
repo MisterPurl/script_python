@@ -9,12 +9,9 @@ print (" _______ _____ _____     _______     ___   _          _______ _______   
 
 import socket
 
-print ("IP :")
-TCP_IP = input()
-print ("port :")
-TCP_PORT = int(input())
-print("how many time ? (number of connexion)")
-nb_conexion = int(input())
+TCP_IP = str(input("IP : "))
+TCP_PORT = int(input("port : "))
+nb_conexion = int(input("number of connexion : "))
 i = 0
 
 while (i < nb_conexion):
